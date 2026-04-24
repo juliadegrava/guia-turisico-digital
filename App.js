@@ -62,6 +62,7 @@ export default function App() {
             />
             <View style={styles.divider} />
             <Text style={styles.cardTitle}>Telegrafbukta</Text>
+            <Text style={styles.cardText}>Telegrafbukta</Text>
           </View>
 
 
@@ -71,7 +72,7 @@ export default function App() {
               style={styles.cardImage}
             />
             <View style={styles.divider} />
-            <Text style={styles.cardText}>Troll Museum</Text>
+            <Text style={styles.cardTitle}>Troll Museum</Text>
             <Text style={styles.cardText}>Aventuras congelantes: conheça a história dos exploradores polares e a vida dos caçadores no Ártico.</Text>
 
           </View>
@@ -84,6 +85,7 @@ export default function App() {
             />
             <View style={styles.divider} />
             <Text style={styles.cardTitle}>Fjord</Text>
+            <Text style={styles.cardText}>Fjord</Text>
           </View>
 
 
@@ -93,7 +95,7 @@ export default function App() {
               style={styles.cardImage}
             />
             <View style={styles.divider} />
-            <Text style={styles.cardText}>Tromsø Cathedral</Text>
+            <Text style={styles.cardTitle}>Tromsø Cathedral</Text>
             <Text style={styles.cardText}>O ícone da cidade. Arquitetura moderna inspirada em geleiras e concertos sob o Sol da Meia-Noite.</Text>
 
           </View>
@@ -170,20 +172,21 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'space-between',
   },
+
   card: {
     backgroundColor: '#C5DDE3',
     width: '48%',
     borderRadius: 20,
-    padding: 3,
+    padding: 7,
     marginBottom: 15,
-    height: 300,
+    height: 270,
   },
   cardImage: {
     width: '100%',
-    height: '45%',
+    height: '55%',
     borderRadius: 15,
-    backgroundColor: '#FFF',
-    borderColor: '#2D5A5A'
+    backgroundColor: '#2D5A5A',
+    padding: 2.5,
   },
   divider: {
     height: 1,
@@ -194,8 +197,13 @@ const styles = StyleSheet.create({
   cardTitle: {
     color: '#2D5A5A',
     fontWeight: 'bold',
+    fontSize: 16,
+  },
+
+  cardText: {
     fontSize: 13,
   },
+
   footerContainer: {
     position: 'absolute',
     bottom: 30,
