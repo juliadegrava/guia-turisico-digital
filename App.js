@@ -40,7 +40,8 @@ export default function App() {
               style={styles.cardImage}
             />
             <View style={styles.divider} />
-            <Text style={styles.cardText}>Prestvannet</Text>
+            <Text style={styles.cardTitle}>Prestvannet</Text>
+            <Text style={styles.cardText}>O refúgio no topo da ilha. Ideal para caminhadas tranquilas e um dos melhores pontos da cidade para caçar a Aurora Boreal.</Text>
           </View>
 
            <View style={styles.card}>
@@ -49,7 +50,8 @@ export default function App() {
               style={styles.cardImage}
             />
             <View style={styles.divider} />
-            <Text style={styles.cardText}>Polaria</Text>
+            <Text style={styles.cardTitle}>Polaria</Text>
+            <Text style={styles.cardText}>Centro ártico interativo com aquário de focas e filmes panorâmicos em um prédio que imita blocos de gelo.</Text>
           </View>
 
 
@@ -59,7 +61,7 @@ export default function App() {
               style={styles.cardImage}
             />
             <View style={styles.divider} />
-            <Text style={styles.cardText}>Telegrafbukta</Text>
+            <Text style={styles.cardTitle}>Telegrafbukta</Text>
           </View>
 
 
@@ -71,6 +73,7 @@ export default function App() {
             <View style={styles.divider} />
             <Text style={styles.cardText}>Troll Museum</Text>
             <Text style={styles.cardText}>Aventuras congelantes: conheça a história dos exploradores polares e a vida dos caçadores no Ártico.</Text>
+
           </View>
 
 
@@ -80,7 +83,7 @@ export default function App() {
               style={styles.cardImage}
             />
             <View style={styles.divider} />
-            <Text style={styles.cardText}>Fjord</Text>
+            <Text style={styles.cardTitle}>Fjord</Text>
           </View>
 
 
@@ -92,6 +95,7 @@ export default function App() {
             <View style={styles.divider} />
             <Text style={styles.cardText}>Tromsø Cathedral</Text>
             <Text style={styles.cardText}>O ícone da cidade. Arquitetura moderna inspirada em geleiras e concertos sob o Sol da Meia-Noite.</Text>
+
           </View>
 
         </View>
@@ -149,6 +153,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 1,
     borderBottomColor: '#DDD',
+    
   },
   sectionTitle: {
     marginLeft: 10,
@@ -169,7 +174,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#C5DDE3',
     width: '48%',
     borderRadius: 20,
-    padding: 10,
+    padding: 3,
     marginBottom: 15,
     height: 300,
   },
@@ -178,14 +183,15 @@ const styles = StyleSheet.create({
     height: '45%',
     borderRadius: 15,
     backgroundColor: '#FFF',
+    borderColor: '#2D5A5A'
   },
   divider: {
     height: 1,
-    backgroundColor: '#555',
+    backgroundColor: '#2D5A5A',
     width: '60%',
     marginVertical: 10,
   },
-  cardText: {
+  cardTitle: {
     color: '#2D5A5A',
     fontWeight: 'bold',
     fontSize: 13,
@@ -195,6 +201,7 @@ const styles = StyleSheet.create({
     bottom: 30,
     width: '100%',
     alignItems: 'center',
+    opacity: '0.95'
   },
   tabBar: {
     flexDirection: 'row',
